@@ -27,3 +27,23 @@ export const navItems = [
 		route: '/contact' 
 	},
 ]
+
+
+export const socials = [
+	{
+		display: true,
+		title: 'Instagram',
+		icon: false,
+		link: '',
+	}, {
+		display: true,
+		title: 'Linkedin',
+		icon: false,
+		link: '',
+	}, {
+		display: true,
+		title: 'Github',
+		icon: false,
+		link: '',
+	},
+]
