@@ -6,7 +6,7 @@
 	export let data
 
 
-	console.log('routes/blog/+page.svelte')
+	console.log('routes/work/+page.svelte')
 	// -------------- start: make array of unique categories --------------//
 	//todo, dry up – refactor into helper module
 	let arraysOfCategories = []

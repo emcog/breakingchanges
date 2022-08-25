@@ -10,7 +10,7 @@
 	$: lowerBound = (page * postsPerPage) - (postsPerPage - 1) || 1
 	$: upperBound = Math.min(page * postsPerPage, totalPosts)
 
-	console.log('blog/page/[page]/page.svelte')
+	console.log('work/page/[page]/page.svelte')
 </script>
 
 
@@ -33,5 +33,5 @@
 
 	<p>Sorry, no posts to show here.</p>
 
-	<a href="/blog">Back to blog</a>
+	<a href="/work">Back to blog</a>
 {/if}

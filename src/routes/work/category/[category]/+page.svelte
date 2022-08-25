@@ -1,10 +1,10 @@
-<!-- Renders any page at /blog/category/* -->
+<!-- Renders any page at /work/category/* -->
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
 
 	export let data
-	console.log('routes/blog/category/[category]/+page.svelte')
+	console.log('routes/work/category/[category]/+page.svelte')
 </script>
 
 
@@ -21,5 +21,5 @@
 {:else}
 	<p><strong>Ope!</strong> Sorry, couldn't find any posts in the category "{data.category}".</p>
 
-	<p><a href="/blog">Back to blog</a></p>
+	<p><a href="/work">Back to blog</a></p>
 {/if}

@@ -3,7 +3,7 @@
 export let data
 
 const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta
-console.log('routes/blog/[post]/+page.svelte', data);
+console.log('routes/work/[post]/+page.svelte', data);
 
 
 // -------------- start: make array of unique categories --------------//
@@ -69,7 +69,7 @@ console.log('uniqueCategories',uniqueCategories);
 			<ul>
 				{#each categories as category}
 					<li>
-						<a href="/blog/category/{category}/">
+						<a href="/work/category/{category}/">
 							{ category }
 						</a>
 					</li>

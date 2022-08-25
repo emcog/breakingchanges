@@ -5,7 +5,7 @@
  * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
  **/ 
 
-export const siteTitle = 'My Awesome Blog'
+export const siteTitle = 'My Awesome workl'
 export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
 export const siteURL = 'example.com'
 export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
@@ -17,8 +17,8 @@ export const postsPerPage = 10
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
 	{
-		title: 'Blog',
-		route: '/blog'
+		title: 'Work',
+		route: '/work'
 	}, {
 		title: 'About',
 		route: '/about'
