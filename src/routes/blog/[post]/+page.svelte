@@ -7,7 +7,7 @@ console.log('routes/blog/[post]/+page.svelte', data);
 
 
 // -------------- start: make array of unique categories --------------//
-//todo, refactor into helper module
+//todo, dry up – refactor into helper module
 let arraysOfCategories = []
 let duplicateCategories = []
 let setCategories = new Set()
