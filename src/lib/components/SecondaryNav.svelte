@@ -1,15 +1,11 @@
 <script>
-	import { storePosts, storeUniqueCategories } from "$lib/assets/js/store";
-	import { onMount} from 'svelte';
 
+	// let navPosts;
+	// let navUniqueCats;
+	// onMount(navUniqueCats = storeUniqueCategories)
+	// onMount(navPosts = storePosts)
 
-
-	let navPosts;
-	let navUniqueCats;
-	onMount(navUniqueCats = storeUniqueCategories)
-	onMount(navPosts = storePosts)
-
-console.log('lib/components/SecondaryNav', $navPosts, $navUniqueCats);
+// console.log('lib/components/SecondaryNav', $navPosts, $navUniqueCats);
 </script>
 
 <nav class="secondary-nav">
@@ -17,22 +13,24 @@ console.log('lib/components/SecondaryNav', $navPosts, $navUniqueCats);
 		<li class="secondary-nav__categories">
 			<p>Categories</p>
 					<ul>
-						{#if $navUniqueCats	}
-							{#each $navUniqueCats as navCat}
-								<li><a href="/work/category/{navCat}">{navCat}</a></li>
-						{/each}
-					{/if}
+						<li>list item</li>
+					<!--	{#if $navUniqueCats	}-->
+					<!--		{#each $navUniqueCats as navCat}-->
+					<!--			<li><a href="/work/category/{navCat}">{navCat}</a></li>-->
+					<!--	{/each}-->
+					<!--{/if}-->
 				</ul>
 		</li>
 		<li class="secondary-nav__case-studies">
 			<p>Case studies</p>
 				<ul>
-					{#if $navPosts }
-						{#each $navPosts as post}
-						<!--todo replace hard coded with ref to settings-->
-							<li><a href="/work/{post.slug}">{post.title}</a></li>
-						{/each}
-					{/if}
+					<li>list item</li>
+					<!--{#if $navPosts }-->
+					<!--	{#each $navPosts as post}-->
+					<!--	&lt;!&ndash;todo replace hard coded with ref to settings&ndash;&gt;-->
+					<!--		<li><a href="/work/{post.slug}">{post.title}</a></li>-->
+					<!--	{/each}-->
+					<!--{/if}-->
 			</ul>
 		</li>
 	</ul>

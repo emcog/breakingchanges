@@ -1,9 +1,13 @@
 <!-- This file renders each individual work post for reading. Be sure to update the svelte:head below -->
 <script>
-export let data
+	import SecondaryNav from '$lib/components/SecondaryNav.svelte';
+
+	export let data
 
 const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta
 console.log('routes/work/[post]/+page.svelte', data);
+
+
 
 
 // -------------- start: make array of unique categories --------------//
@@ -43,6 +47,7 @@ console.log('uniqueCategories',uniqueCategories);
 
 
 <article class="post">
+	<SecondaryNav/>
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
 		class="cover-image"
