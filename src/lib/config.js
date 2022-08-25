@@ -6,12 +6,12 @@
  **/ 
 
 export const siteTitle = 'My Awesome workl'
-export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
+export const siteDescription = 'Built with the SvelteKit Static work Starter'
 export const siteURL = 'example.com'
-export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
+export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-work-starter'
 export const siteAuthor = 'Josh Collinsworth - find and change this text in src/lib/config.js'
 
-// Controls how many posts are shown per page on the main blog index pages
+// Controls how many posts are shown per page on the main work index pages
 export const postsPerPage = 10
 
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)

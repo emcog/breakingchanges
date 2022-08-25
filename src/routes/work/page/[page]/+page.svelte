@@ -1,4 +1,4 @@
-<!-- This file handles any /blog/page/x route for pagination -->
+<!-- This file handles any /work/page/x route for pagination -->
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
@@ -15,7 +15,7 @@
 
 
 <svelte:head>
-	<title>Blog - page {page}</title>
+	<title>work - page {page}</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
@@ -33,5 +33,5 @@
 
 	<p>Sorry, no posts to show here.</p>
 
-	<a href="/work">Back to blog</a>
+	<a href="/work">Back to work</a>
 {/if}

@@ -1,1 +1,1 @@
-<script>console.log('blog/page/+page.svelte')</script>
+<script>console.log('work/page/+page.svelte')</script>

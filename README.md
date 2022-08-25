@@ -1,12 +1,12 @@
-# SvelteKit static blog starter
+# SvelteKit static work starter
 
-This starter contains everything you need to get up and running with [SvelteKit](https://kit.svelte.dev/) as a static site generator for your Markdown (and Svelte)-powered blog. [Check out the demo here](https://sveltekit-static-starter.netlify.app/), or view the [GitHub repo here](https://github.com/josh-collinsworth/sveltekit-blog-starter).
+This starter contains everything you need to get up and running with [SvelteKit](https://kit.svelte.dev/) as a static site generator for your Markdown (and Svelte)-powered work. [Check out the demo here](https://sveltekit-static-starter.netlify.app/), or view the [GitHub repo here](https://github.com/josh-collinsworth/sveltekit-work-starter).
 
 ## Features
 
 - ⚡️ **Super fast static site generation with hydration**. Every route is compiled down to static HTML and routed with (optional) JavaScript, thanks to the SvelteKit static adapter (pre-installed)
 - 📦 **Zero-config prefetching** for automatic, fast background preloading of all top-level pages
-- ✍️ **Markdown support** with a pre-configured blog
+- ✍️ **Markdown support** with a pre-configured work
 	- 📑 **Pagination** included (_can customize posts per page_)
 	- ✅ **Category pages** included
 	- 💬 **Posts JSON API**
@@ -15,17 +15,17 @@ This starter contains everything you need to get up and running with [SvelteKit]
 	- 🔗 **Rehype** plugins are included to generate unique heading IDs, for direct linking
 - 📱 **Responsive and accessible defaults**; includes a "skip to content" link and accessible mobile nav menu
 - 🔄 **Page transitions** (_fancy!_)
-- 🔎 **Basic SEO** for blog posts (_strongly recommend checking that out for yourself, though_)
+- 🔎 **Basic SEO** for work posts (_strongly recommend checking that out for yourself, though_)
 - 📰 **RSS feed** set up and ready to go (_though it could also likely benefit from some optimization_); just update `src/lib/config.js`
 
 
 ## Quick Start
 
-Clone or download [this repo](https://github.com/josh-collinsworth/sveltekit-blog-starter), then install the dependencies and run the dev server:
+Clone or download [this repo](https://github.com/josh-collinsworth/sveltekit-work-starter), then install the dependencies and run the dev server:
 
 ```
-npx degit https://github.com/josh-collinsworth/sveltekit-blog-starter my-sveltekit-blog
-cd my-sveltekit-blog
+npx degit https://github.com/josh-collinsworth/sveltekit-work-starter my-sveltekit-work
+cd my-sveltekit-work
 npm install
 npm run dev -- --open
 ```
@@ -54,20 +54,20 @@ Adding new posts is as simple as dropping a new `.md` file into `src/lib/posts`.
 
 A few demo Markdown posts are included, and highlight some of the features of this starter. These demo posts can be updated or removed, but it may be best to use one as a starting point, just for the frontmatter properties.
 
-If you want to use other frontmatter properties in the template (or just modify the layout), make changes in `src/routes/blog/[post]/+page.svelte`.
+If you want to use other frontmatter properties in the template (or just modify the layout), make changes in `src/routes/work/[post]/+page.svelte`.
 
 **Note: posts should have a `date` frontmatter property.** This is how they're sorted by default. There are also other frontmatter properties used to enhance the site experience (like the `coverWidth` and `coverHeight`, which are used in the template to reserve space for the image, minimizing cumulative layout shift).
 
 The starter will still work without `date` properties in your posts, but the sorting won't be right.
 
-Also: while there's no link to it by default, `/blog/category` exists as an archive of all your post categories.
+Also: while there's no link to it by default, `/work/category` exists as an archive of all your post categories.
 
 
 ### Pagination
 
 Pagination automatically kicks in once you have more posts than the `postsPerPage` option in `src/lib/config.js`. This means you won't see the pagination right away unless you either change `postsPerPage` to a very low number, or add several more Markdown files to the `src/lib/posts` folder.
 
-**Note:** both the normal `/blog` feed _and_ the category feeds at `/category/[category]` are automatically paginated.
+**Note:** both the normal `/work` feed _and_ the category feeds at `/category/[category]` are automatically paginated.
 
 
 ### RSS
@@ -132,4 +132,4 @@ I assume at least a little bit of knowledge of SvelteKit and/or similar static s
 
 ## Contributing
 
-I've tried my best to make sure this starter is up to date with the latest SvelteKit, but I'm sure improvements can be made. Feel free to [visit the repo](https://github.com/josh-collinsworth/sveltekit-blog-starter) and submit a pull request, or [contact me directly](https://joshcollinsworth.com/contact).
+I've tried my best to make sure this starter is up to date with the latest SvelteKit, but I'm sure improvements can be made. Feel free to [visit the repo](https://github.com/josh-collinsworth/sveltekit-work-starter) and submit a pull request, or [contact me directly](https://joshcollinsworth.com/contact).

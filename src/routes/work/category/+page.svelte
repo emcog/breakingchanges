@@ -6,12 +6,12 @@
 
 
 <svelte:head>
-	<title>Blog | Categories</title>
+	<title>work | Categories</title>
 </svelte:head>
 
 
 <div class="compressed-content">
-	<h1 class="h2">All blog categories</h1>
+	<h1 class="h2">All work categories</h1>
 	
 	<ul>
 		{#each uniqueCategories as category}

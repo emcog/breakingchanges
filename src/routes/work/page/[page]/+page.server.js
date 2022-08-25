@@ -5,7 +5,7 @@ import { redirect, error } from '@sveltejs/kit'
 export const load = async ({ url, params }) => {
   const page = params.page ? params.page : 1
 
-  // Keeps from duplicationg the blog index route as page 1
+  // Keeps from duplicationg the work index route as page 1
   if (page <= 1) {
     throw redirect(301, '/work')
   }
