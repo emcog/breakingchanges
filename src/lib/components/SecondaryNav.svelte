@@ -1,8 +1,9 @@
 <script>
+	import { onMount } from 'svelte';
+	import { categoriesStore } from '$lib/assets/js/store';
 
-	// let navPosts;
-	// let navUniqueCats;
-	// onMount(navUniqueCats = storeUniqueCategories)
+	let navUniqueCats;
+	onMount(navUniqueCats = categoriesStore);
 	// onMount(navPosts = storePosts)
 
 // console.log('lib/components/SecondaryNav', $navPosts, $navUniqueCats);
@@ -14,11 +15,11 @@
 			<p>Categories</p>
 					<ul>
 						<li>list item</li>
-					<!--	{#if $navUniqueCats	}-->
-					<!--		{#each $navUniqueCats as navCat}-->
-					<!--			<li><a href="/work/category/{navCat}">{navCat}</a></li>-->
-					<!--	{/each}-->
-					<!--{/if}-->
+						{#if $navUniqueCats	}
+							{#each $navUniqueCats as navCat}
+								<li><a href="/work/category/{navCat}">{navCat}</a></li>
+						{/each}
+					{/if}
 				</ul>
 		</li>
 		<li class="secondary-nav__case-studies">

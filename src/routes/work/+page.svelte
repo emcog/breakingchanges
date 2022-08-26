@@ -2,6 +2,8 @@
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
 	import { siteDescription } from '$lib/config'
+	import { categoriesStore } from '$lib/assets/js/store';
+	import SecondaryNav from '$lib/components/SecondaryNav.svelte';
 
 	export let data
 
@@ -20,7 +22,10 @@
 	duplicateCategories.forEach(e => setCategories.add(e))
 	uniqueCategories = [...setCategories]
 	uniqueCategories.sort()
-	console.log('uniqueCategories',uniqueCategories);
+	categoriesStore.set(uniqueCategories)
+
+	console.log('uniqueCategories',categoriesStore);
+
 	// -------------- end: make array of unique categories  --------------//
 
 </script>
@@ -32,6 +37,7 @@
 </svelte:head>
 
 <h1>work</h1>
+<SecondaryNav/>
 
 <PostsList posts={data.posts} />
 
